@@ -1,130 +1,131 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Abesamis Dental Clinic</title>
-</head>
-<body>
-    <!-- Main Wrapper -->
-    <div id="wrapper">
-        <!-- Left Panel -->
-        <div id="left_panel">
-            <img id="logo" src="icons/patient/logo.png" alt="Logo">
-            <div>
-                <label id="label_home"><img src="icons/patient/home_icon.png" alt="Home Icon">Homepage</label>
-                <label id="label_notification"><img src="icons/patient/notification_icon.png" alt="Notification Icon">Notifications</label>
-                <label id="label_medical"><img src="icons/patient/medical_record_icon.png" alt="Medical Record Icon">Medical Records</label>
-                <label id="label_calendar"><img src="icons/patient/calendar_icon.png" alt="Calendar Icon">Appointments</label>
-                <label id="label_chat"><img src="icons/patient/message_icon.png" alt="Message Icon">Messages</label>
-                <label><img src="icons/patient/signout_icon.png" alt="Logout Icon">Sign Out</label>
-            </div>
-        </div>
-
-        <!-- Right Panel -->
-        <div id="right_panel">
-            <!-- Header -->
-            <div id="header">
-                <div id="info">
-                    <p id="fullname">Carlos Sainz</p>
-                    <p id="status">Patient</p>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Abesamis Dental Clinic</title>
+    </head>
+    <body>
+        <!-- Main Wrapper -->
+        <div id="wrapper">
+            <!-- Left Panel -->
+            <div id="left_panel">
+                <img id="logo" src="icons/patient/logo.png" alt="Logo">
+                <div>
+                    <label id="label_home"><img src="icons/patient/home_icon.png" alt="Home Icon">Homepage</label>
+                    <label id="label_notification"><img src="icons/patient/notification_icon.png" alt="Notification Icon">Notifications</label>
+                    <label id="label_medical"><img src="icons/patient/medical_record_icon.png" alt="Medical Record Icon">Medical Records</label>
+                    <label id="label_calendar"><img src="icons/patient/calendar_icon.png" alt="Calendar Icon">Appointments</label>
+                    <label id="label_chat"><img src="icons/patient/message_icon.png" alt="Message Icon">Messages</label>
+                    <label><img src="icons/patient/signout_icon.png" alt="Logout Icon">Sign Out</label>
                 </div>
-                <img id="profile_icon" src="img/CarlosID.png" alt="Profile Icon">
             </div>
 
-            <!-- Content Panel -->
-            <div id="content_panel">
-                <header>
-                    <h1>Dashboard</h1>
-                    <!-- Placeholder for Dynamic Date -->
-                    <p>October 18, 2024 09:32:07</p>
-                    <br>
-                </header>
-                <main>
-                    <section class="top-metrics">
-                        <div class="metric">
-                            <h2>P 5,310,000</h2>
-                            <p>Total Income</p>
-                        </div>
-                        <div class="metric">
-                            <h2>7</h2>
-                            <p>Number of equipment that needs restocking</p>
-                        </div>
-                        <div class="metric">
-                            <h2>39</h2>
-                            <p>Equipment available</p>
-                        </div>
-                        <div class="metric">
-                            <h2>12</h2>
-                            <p>Expired consumables</p>
-                        </div>
-                    </section>
-                    
-                    <br>
+            <!-- Right Panel -->
+            <div id="right_panel">
 
-                    <section class="income-distribution">
-                        <h2>Income Distribution</h2>
-                        <canvas id="incomeChart"></canvas>
-                    
-                    
-                    </section>
+                <!-- Header -->
+                <div id="header">
+                    <div id="info">
+                        <p id="fullname">Carlos Sainz</p>
+                        <p id="status">Patient</p>
+                    </div>
+                    <img id="profile_icon" src="img/CarlosID.png" alt="Profile Icon">
+                </div>
 
-                    <br>
+                <!-- Content Panel -->
+                <div id="content_panel">
+                    <header>
+                        <h1>Dashboard</h1>
+                        <!-- Placeholder for Dynamic Date -->
+                        <p>October 18, 2024 09:32:07</p>
+                        <br>
+                    </header>
+                    <main>
+                        <section class="top-metrics">
+                            <div class="metric">
+                                <h2>P 5,310,000</h2>
+                                <p>Total Income</p>
+                            </div>
+                            <div class="metric">
+                                <h2>7</h2>
+                                <p>Number of equipment that needs restocking</p>
+                            </div>
+                            <div class="metric">
+                                <h2>39</h2>
+                                <p>Equipment available</p>
+                            </div>
+                            <div class="metric">
+                                <h2>12</h2>
+                                <p>Expired consumables</p>
+                            </div>
+                        </section>
+                        
+                        <br>
 
-                    <section class="bottom-metrics">
-                        <div class="metric">
-                            <h3>Top 5 Most Requested Appointment Types</h3>
-                            <ol>
-                                <li>Routine Check-up: 68 appointments</li>
-                                <li>Cleaning: 32 appointments</li>
-                                <li>Consultation: 20 appointments</li>
-                                <li>Follow-up: 15 appointments</li>
-                                <li>Surgical Procedure: 10 appointments</li>
-                            </ol>
-                        </div>
-                        <div class="metric">
-                            <h3>Request Order</h3>
-                            <ol>
-                                <li>Composite Filling Kits</li>
-                                <li>Mouth Rinses</li>
-                                <li>Dental Cements</li>
-                                <li>Dental Bibs</li>
-                                <li>Latex Gloves</li>
-                                <li>Cotton Rolls</li>
-                            </ol>
-                        </div>
-                        <div class="metric">
-                            <h3>Top 5 Used Items</h3>
-                            <ol>
-                                <li>Latex Gloves: 540 units</li>
-                                <li>Cotton Rolls: 300 units</li>
-                                <li>Disposable Masks: 250 units</li>
-                                <li>Dental Bibs: 200 units</li>
-                                <li>Anesthetic Cartridges: 150 units</li>
-                            </ol>
-                        </div>
-                        <div class="metric">
-                            <h3>Usage by Category Monthly</h3>
-                            <ol>
-                                <li>consumables: 275 usages</li>
-                                <li>Apparatus: 115 usages</li>
-                                <li>Large Equipment: 60 usages</li>
-                            </ol>
-                        </div>
-                    </section>
+                        <section class="income-distribution">
+                            <h2>Income Distribution</h2>
+                            <canvas id="incomeChart"></canvas>
+                        
+                        
+                        </section>
+
+                        <br>
+
+                        <section class="bottom-metrics">
+                            <div class="metric">
+                                <h3>Top 5 Most Requested Appointment Types</h3>
+                                <ol>
+                                    <li>Routine Check-up: 68 appointments</li>
+                                    <li>Cleaning: 32 appointments</li>
+                                    <li>Consultation: 20 appointments</li>
+                                    <li>Follow-up: 15 appointments</li>
+                                    <li>Surgical Procedure: 10 appointments</li>
+                                </ol>
+                            </div>
+                            <div class="metric">
+                                <h3>Request Order</h3>
+                                <ol>
+                                    <li>Composite Filling Kits</li>
+                                    <li>Mouth Rinses</li>
+                                    <li>Dental Cements</li>
+                                    <li>Dental Bibs</li>
+                                    <li>Latex Gloves</li>
+                                    <li>Cotton Rolls</li>
+                                </ol>
+                            </div>
+                            <div class="metric">
+                                <h3>Top 5 Used Items</h3>
+                                <ol>
+                                    <li>Latex Gloves: 540 units</li>
+                                    <li>Cotton Rolls: 300 units</li>
+                                    <li>Disposable Masks: 250 units</li>
+                                    <li>Dental Bibs: 200 units</li>
+                                    <li>Anesthetic Cartridges: 150 units</li>
+                                </ol>
+                            </div>
+                            <div class="metric">
+                                <h3>Usage by Category Monthly</h3>
+                                <ol>
+                                    <li>consumables: 275 usages</li>
+                                    <li>Apparatus: 115 usages</li>
+                                    <li>Large Equipment: 60 usages</li>
+                                </ol>
+                            </div>
+                        </section>
 
 
-                </main>
-<!--key performance indicator-->
-<div>
-    <h2>Key Performance Indicators</h2>
-</div>
+                    </main>
+                <!--key performance indicator-->
+                <div>
+                    <h2>Key Performance Indicators</h2>
+                </div>
 
 
 
+                </div>
             </div>
         </div>
-    </div>
-</body>
-</html>
+    </body>
+    </html>

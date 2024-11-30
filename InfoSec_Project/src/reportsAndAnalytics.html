@@ -1,0 +1,154 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Abesamis Dental Clinic</title>
+        <script src="https://www.gstatic.com/charts/loader.js"></script>
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+    </head>
+    <body>
+        <!-- Main Wrapper -->
+        <div id="wrapper">
+            <!-- Left Panel -->
+            <div id="left_panel">
+                <img id="logo" src="icons/patient/logo.png" alt="Logo">
+                <div>
+                    <label id="label_home"><img src="icons/patient/home_icon.png" alt="Home Icon">Homepage</label>
+                    <label id="label_notification"><img src="icons/patient/notification_icon.png" alt="Notification Icon">Notifications</label>
+                    <label id="label_medical"><img src="icons/patient/medical_record_icon.png" alt="Medical Record Icon">Medical Records</label>
+                    <label id="label_calendar"><img src="icons/patient/calendar_icon.png" alt="Calendar Icon">Appointments</label>
+                    <label id="label_chat"><img src="icons/patient/message_icon.png" alt="Message Icon">Messages</label>
+                    <label><img src="icons/patient/signout_icon.png" alt="Logout Icon">Sign Out</label>
+                </div>
+            </div>
+
+            <!-- Right Panel -->
+            <div id="right_panel">
+
+                <!-- Header -->
+                <div id="header">
+                    <div id="info">
+                        <p id="fullname">Carlos Sainz</p>
+                        <p id="status">Patient</p>
+                    </div>
+                    <img id="profile_icon" src="img/CarlosID.png" alt="Profile Icon">
+                </div>
+
+                <!-- Content Panel -->
+                <div id="content_panel">
+                    <header>
+                        <h1>Reports and Analytics</h1>
+                    </header>
+                    <main>
+
+                        <div class="top-charts">
+
+                            <div class="pie-charts">
+                                <h3>Payment Status Demographics</h3>
+                                <!--Charts panel-->
+                                <div class="piechart" id="piechart1"></div>
+                            </div>
+                            <div class="pie-charts">
+                                <h3>Payment Type Demographics</h3>
+                                <!--Charts panel-->
+                                <div class="piechart" id="piechart2"></div>
+                            </div>
+                            <div class="pie-charts">
+                                <h3>Procedure Frequency</h3>
+                                <!--Charts panel-->
+                                <div class="piechart" id="piechart3"></div>
+                            </div>
+                            <div class="pie-charts">
+                                <h3>Inventory Usage by Category</h3>
+                                <!--Charts panel-->
+                                <div class="piechart" id="piechart4"></div>
+                            </div>
+                            <div class="pie-charts">
+                                <h3>Patient Age Group Demographics</h3>
+                                <!--Charts panel-->
+                                <div class="piechart" id="piechart5"></div>
+                            </div>                          
+                        </div>
+                    </main>
+
+                    <div class="generate-reports-panel">
+                        <h2>Generate Report</h2>
+
+                            <h3>Dataset/s*</h3>
+                            <input type="text" id="dataset-select" placeholder="Enter Dataset name">
+                        
+                            <h3>Date Range*</h3>
+                            <input type="date" id="start-date" placeholder="Start Date">
+                            <input type="date" id="end-date" placeholder="End Date">
+
+                            <h3>Visualization Diagram*</h3>
+                            <input type="text" id="visualization-diagram" placeholder="Select the visualization diagram to use">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            google.charts.load('current', {'packages':['corechart']});
+            google.charts.setOnLoadCallback(drawCharts);
+            //DATA FOR PIE1
+            function drawCharts(){
+                var data1 = google.visualization.arrayToDataTable([
+                ['Status', 'Payment'],
+                ['Paid',     11],
+                ['Pending',   2],
+                ['Overdue',   7]
+                ]);
+                const chart1 = new google.visualization.PieChart(document.getElementById('piechart1'))
+                chart1.draw(data1)
+
+
+            var data2 = google.visualization.arrayToDataTable([
+                ['Status', 'Payment'],
+                ['Cash on-site',     11],
+                ['Online Payment',      2],
+                ['HMO',    7]
+                ]);
+                const chart2 = new google.visualization.PieChart(document.getElementById('piechart2'))
+                chart2.draw(data2)
+            var data3 = google.visualization.arrayToDataTable([
+                ['Status', 'Payment'],
+                ['Cleanings',     11],
+                ['Fillings',      2],
+                ['Extraction',    7],
+                ['Crowns',    7],
+                ['Root Canals',    7]
+                ]);
+                const chart3 = new google.visualization.PieChart(document.getElementById('piechart3'))
+                chart3.draw(data3)
+            var data4 = google.visualization.arrayToDataTable([
+                ['Status', 'Payment'],
+                ['Consumables',     11],
+                ['Equipment',      2],
+                ['Apparatus',    7]
+                ]);
+                const chart4 = new google.visualization.PieChart(document.getElementById('piechart4'))
+                chart4.draw(data4)
+            var data5 = google.visualization.arrayToDataTable([
+                ['Status', 'Payment'],
+                ['Children (0-12)',     11],
+                ['Teens (13-19)',      2],
+                ['Adults (20-59)',    7],
+                ['Seniors (60+)',    7]
+                ]);
+                const chart5 = new google.visualization.PieChart(document.getElementById('piechart5'))
+                chart5.draw(data5)
+            }
+
+            var options = {
+                tooltip: {
+                    trigger: 'focus'
+                }
+            };
+            
+
+        </script>
+    </body>
+    </html>
