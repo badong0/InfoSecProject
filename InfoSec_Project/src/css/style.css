@@ -450,3 +450,190 @@
     outline: none;
     box-shadow: 0 0 5px rgba(102, 175, 233, 0.6);
 }
+.generate-reports-panel input[type='date']{
+    display:inline;
+    width: 14.8%;
+    
+}
+
+
+
+
+.patient-table img{
+    padding: 5px 5px;
+    cursor: pointer;
+    margin-left: 10px;
+    width: 30px;
+}
+
+.patient-table {
+    border-collapse: collapse;
+    max-width: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+}
+
+.patient-tabs ul{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #fff;
+    list-style-type: none;
+}
+.patient-tabs li{
+    float: left;
+}
+.patient-tabs a{
+    display: inline-block;
+    color: #335271;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+.patient-tabs a:hover{
+    border-bottom: #335271;
+}
+
+/* Patient Tabs Content */
+.patient-tabs-content {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 30px; /* Space between pie chart and data */
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Pie Chart */
+.patient-pie-chart {
+    width: 250px;
+    height: 250px;
+}
+
+/* Chart Data */
+.patient-chart-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 15px;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+/* Data Item Styling */
+.data-item h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #555;
+}
+
+.data-item h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #000;
+}
+
+
+
+
+.patient-medicalhistory-panel{
+    margin-left: 10px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 800px;
+}
+.patient-medicalhistory-panel h3{
+    margin: 10px;
+    margin-left: 20px;
+}
+
+.patient-medical-history-table{
+    border-collapse: collapse;
+    max-width: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.patient-medical-history-table th, .patient-medical-history-table td{
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.patient-medical-history-table th{
+    background-color: #88BAFF;
+}
+
+
+.patient-analysis-panel{
+    margin-left: 40px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 800px;
+}
+
+
+.patient-files{
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 800px;
+}
+.patient-files h3{
+    margin: 10px;
+    margin-left: 10px;
+}
+
+
+
+
+
+/*top part*/
+.patient-info{
+    display: flex;
+    align-items: top;
+    margin-left: 20px;
+    gap: 20px ;
+}
+
+.patient-details h1{
+    margin: 0;
+    font-size: 35px
+}
+
+.patient-meta p{
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.patient-meta strong {
+    color: #333;
+}
+.icon {
+    font-size: 14px;
+    color: #888;
+}
+.profile-pic{
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+}
+
+
+
