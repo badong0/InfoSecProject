@@ -458,6 +458,45 @@
 
 
 
+/*patient1.html css*/
+.search-bar{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.search-bar h1{
+    color: #CD6A30;
+    font-weight: bold;
+    font-size: 45px;
+}
+.search-bar input{
+    color: #A7A7A7;
+    width: 597px;
+    height: 48px;
+    flex-grow: 1;
+}
+/*hindi mapatabi ang button filter and search sa textbox*/
+.search-bar button{
+    border-radius: 63px;   
+    border-color: #335271; 
+    font-size: 16px;
+    width: 160px;
+    height: 47px;
+    background-color: white;
+    flex-grow: 1;
+}
+#search-button{
+    background-color: #335271;
+    color: white;
+    font-weight: bold;
+} 
+.patient-content{
+    padding: 20px;
+}
+
+
 
 .patient-table img{
     padding: 5px 5px;
@@ -468,10 +507,17 @@
 
 .patient-table {
     border-collapse: collapse;
-    max-width: 100%;
-    margin-left: 20px;
+    width: 100%;
     margin-right: 20px;
-    
+}
+.patient-table th, .patient-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+.patient-table th {
+    background-color: #335271;
+    color: white;
 }
 
 .patient-tabs ul{
@@ -482,6 +528,18 @@
     background-color: #fff;
     list-style-type: none;
 }
+
+.patient-table th{
+    font-size: 15px;
+    font-weight: bold;
+
+}
+.patient-table td{
+    text-align: left;
+    font-size: 14px;
+}
+
+
 .patient-tabs li{
     float: left;
 }
@@ -505,12 +563,14 @@
     align-items: flex-start;
     gap: 30px; /* Space between pie chart and data */
     padding: 20px;
-    max-width: 800px;
     margin: 20px auto;
+    margin-left: 20px;
     border: 1px solid #ccc;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
+
 
 /* Pie Chart */
 .patient-pie-chart {
@@ -543,7 +603,7 @@
 
 
 
-
+/*patient2.html css*/
 .patient-medicalhistory-panel{
     margin-left: 10px;
     margin: 20px auto;
@@ -603,7 +663,7 @@
 
 
 
-/*top part*/
+/*top part ng patient*/
 .patient-info{
     display: flex;
     align-items: top;
@@ -637,3 +697,50 @@
 
 
 
+
+.patient-personal-information {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 80%;
+    box-sizing: border-box;
+  }
+  
+  .patient-personal-data,
+  .patient-address,
+  .patient-contact,
+  .patient-emergency {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+  
+  .patient-personal-data > div,
+  .patient-address > div,
+  .patient-contact > div,
+  .patient-emergency > div {
+    display: grid;
+    grid-template-columns: 1f 4fr;
+    align-items: center;
+  }
+  
+  .patient-personal-data h2,
+  .patient-address h2,
+  .patient-contact h2,
+  .patient-emergency h2 {
+    margin-top: 10px;
+    grid-column: 1 / 4;
+    font-size: 20;
+    font-style: bold;
+    font-size: 25px;
+  }
+
+.patient-personal-information h3{
+    font-size: 16px;
+    color: #A7A7A7;
+}
+
+.patient-personal-information p{
+    font-size: 20px;
+    color: black;
+}
