@@ -37,10 +37,11 @@
 
             <!-- Content Panel -->
             <div id="content_panel">
+                <!--it yung nasa taas, lagayan ng picture icon, name, sex, age, birthday-->
                 <header class="patient-header">
-
                     <div class="patient-info">
                         <img src="/InfoSec_Project/src/patient/People Icon.png" alt="Profile picture" class="profile-pic">
+                        
                         <div class="patient-details">
                             <h1>Amanda R. Flores</h1>  
                             <div class="patient-meta">
@@ -58,139 +59,129 @@
                     </div>
                 </header>
 
+                <!--it yung tabs yung overview sa taas-->
                 <div class="patient-tabs">
                     <ul>
-                        <li><a href="#overview">Overview</a></li>
+                        <!--na try kong pindot as link and magoopen ng html-->
+                        <li><a href="#overview" class="active">Overview</a></li>
                         <li><a href="#personal-information">Personal Information</a></li>
-                        <li><a href="appointment-history">Appointment History</a></li>
-                        <li><a href="dental-history">Dental History</a></li>
-                        <li><a href="laboratory-results">Laboratory Results</a></li>
-                        <li><a href="medications">Medications</a></li>
+                        <li><a href="#appointment-history">Appointment History</a></li>
+                        <li><a href="#dental-history">Dental History</a></li>
+                        <li><a href="#laboratory-results">Laboratory Results</a></li>
+                        <li><a href="#medications">Medications</a></li>
                     </ul>
-                </div> 
+                </div>
 
                 <main>
-                    <div class="patient-tabs-content">
-                        <!-- Pie Chart Container -->
-                        <div class="patient-pie-chart" id="piechart1"></div>
-                
-                        <!-- Data Display -->
-                        <div class="patient-chart-data">
-                            <div class="data-item">
-                                <h3>Consultation</h3>
-                                <h2 id="consultation-data">13</h2>
-                            </div>
-                            <div class="data-item">
-                                <h3>Appointment no show</h3>
-                                <h2 id="appointment-data">3</h2>
-                            </div>
-                            <div class="data-item">
-                                <h3>Surgical Procedure</h3>
-                                <h2 id="surgical-data">2</h2>
+                    <div class="patient-overview-content">
+
+                        <div class="patient-tabs-content">
+                            <!-- Pie Chart Container -->
+                            <div class="patient-pie-chart" id="piechart1"></div>
+                    
+                            <!-- Data Display sa chart panel-->
+                            <div class="patient-chart-data">
+                                <div class="data-item">
+                                    <h3>Consultation</h3>
+                                    <h2 id="consultation-data">13</h2>
+                                </div>
+                                <div class="data-item">
+                                    <h3>Appointment no show</h3>
+                                    <h2 id="appointment-data">3</h2>
+                                </div>
+                                <div class="data-item">
+                                    <h3>Surgical Procedure</h3>
+                                    <h2 id="surgical-data">2</h2>
+                                </div>
                             </div>
                         </div>
-
-
-                    </div>
-                        
+                        <div class="patient-analysis-panel">
+                            <div class="analysis-allergies">
+                                <h3>Allergies</h3>
+                                <p id="allergies-data">No Allergies</p>
+                            </div>
+                            
+                            <div class="analysis-medication">
+                                <h3>Medication</h3>
+                                <p id="medication-data">Aspirin Beta Blockers</p>
+                            </div>
+                            <div class="analysis-recent-visit">
+                                <h3>Recent Visit</h3>
+                                <p>Dr. Evan J. Santos</p>
+                                <p>Endodontics</p>
+                                <p>Dental Cleaning</p>
+                                <p>2024-06-09</p>
+                                <p>09:00 AM - 10:OO AM</p>
+                            </div>
+                        </div>
+                        <div class="patient-medicalhistory-panel">
+                            <h3>Medical History</h3>
+                            <table class="patient-medical-history-table">
+                                <thead>
+                                    <tr>
+                                        <th>Condition</th>
+                                        <th>Severity</th>
+                                        <th>Date of Diagnosis</th>
+                                        <th>Impact of Dental Care</th>
+                                    </tr>
+                                </thead>
     
-                    <div class="patient-analysis-panel">
-                        <div class="analysis-allergies">
-                            <h3>Allergies</h3>
-                            <p id="allergies-data">No Allergies</p>
+                                <tbody>
+                                    <td>Diabetes, Type 2</td>
+                                    <td>Managed with medication</td>
+                                    <td>2015</td>
+                                    <td>Higher risk of infection; delayed healing</td>
+                                </tbody>
+                                <tbody>
+                                    <td>Hypertension</td>
+                                    <td>Moderate</td>
+                                    <td>2018</td>
+                                    <td>Avoid high-stress procedures</td>
+                                </tbody>
+                                <tbody>
+                                    <td>Hearth Disease</td>
+                                    <td>Severe; pacemaker installed</td>
+                                    <td>2020</td>
+                                    <td>Avoid ultrasonic scalers</td>
+                                </tbody>
+                                <tbody>
+                                    <td>Asthma</td>
+                                    <td>Controlled with inhaler</td>
+                                    <td>2010</td>
+                                    <td>Limit aerosol-generating procedures; stress precaution</td>
+                                </tbody>
+                            </table>
                         </div>
-                        
-                        <div class="analysis-medication">
-                            <h3>Medication</h3>
-                            <p id="medication-data">Aspirin Beta Blockers</p>
-                        </div>
-                        <div class="analysis-recent-visit">
-                            <h3>Recent Visit</h3>
-                            <p>Dr. Evan J. Santos</p>
-                            <p>Endodontics</p>
-                            <p>Dental Cleaning</p>
-                            <p>2024-06-09</p>
-                            <p>09:00 AM - 10:OO AM</p>
-                        </div>
-                    </div>
-
-
-                    <div class="patient-medicalhistory-panel">
-                        <h3>Medical History</h3>
-                        <table class="patient-medical-history-table">
-                            <thead>
-                                <tr>
-                                    <th>Condition</th>
-                                    <th>Severity</th>
-                                    <th>Date of Diagnosis</th>
-                                    <th>Impact of Dental Care</th>
-                                </tr>
-                            </thead>
-
-                            <tbody>
-                                <td>Diabetes, Type 2</td>
-                                <td>Managed with medication</td>
-                                <td>2015</td>
-                                <td>Higher risk of infection; delayed healing</td>
-                            </tbody>
-                            <tbody>
-                                <td>Hypertension</td>
-                                <td>Moderate</td>
-                                <td>2018</td>
-                                <td>Avoid high-stress procedures</td>
-                            </tbody>
-                            <tbody>
-                                <td>Hearth Disease</td>
-                                <td>Severe; pacemaker installed</td>
-                                <td>2020</td>
-                                <td>Avoid ultrasonic scalers</td>
-                            </tbody>
-                            <tbody>
-                                <td>Asthma</td>
-                                <td>Controlled with inhaler</td>
-                                <td>2010</td>
-                                <td>Limit aerosol-generating procedures; stress precaution</td>
-                            </tbody>
-                        </table>
-                    </div>
-
-                    <div class="patient-files">
-                        <h3>Files and Documents</h3>
-                        <button><img src="/InfoSec_Project/src/patient/upload_button.png" alt="Upload"></button>
-                        <div class="patient-files-contents">
-                            <p><img src="/InfoSec_Project/src/patient/pdf-logo.png" alt="download">Consent Form</p>
-                            <p><img src="/InfoSec_Project/src/patient/pdf-logo.png" alt="download">InsuranceLOA</p>
-                            <p><img src="/InfoSec_Project/src/patient/pdf-logo.png" alt="download">Laboratory Result</p>
-                            <p><img src="/InfoSec_Project/src/patient/pdf-logo.png" alt="download">Prescription</p>
-                            <p><img src="/InfoSec_Project/src/patient/pdf-logo.png" alt="download">Consent Form</p>
-                        </div>
-
-                    </div>
     
-                
-
+                        <div class="patient-files">
+                            <h3>Files and Documents</h3>
+                            <button><img src="/InfoSec_Project/src/patient/upload_button.png" alt="Upload"></button>
+                            <div class="patient-files-contents">
+                                <p><img src="/InfoSec_Project/src/patient/pdf-logo.png" alt="download">Consent Form</p>
+                                <p><img src="/InfoSec_Project/src/patient/pdf-logo.png" alt="download">InsuranceLOA</p>
+                                <p><img src="/InfoSec_Project/src/patient/pdf-logo.png" alt="download">Laboratory Result</p>
+                                <p><img src="/InfoSec_Project/src/patient/pdf-logo.png" alt="download">Prescription</p>
+                                <p><img src="/InfoSec_Project/src/patient/pdf-logo.png" alt="download">Consent Form</p>
+                            </div>
+                        </div>
+                    </div>
                 </main>
-
-
-                <!--the end of content panel-->
-                </div>
-            
-
+                <!--the end of main-->
             </div>
         </div>
     </div>
-
-    <!--pie chart scripts-->
+    
     <script>
-        
+        /*code for the chart*/
         google.charts.load('current', {'packages':['corechart']});
         google.charts.setOnLoadCallback(drawCharts);
             
         //DATA FOR patient pie
         function drawCharts(){
+            
             var data1 = google.visualization.arrayToDataTable([
             ['what', 'number'],
-            ['Consultation',     13],
+            ['Consultation',     13],//dito mo pwede lagay yung values na mag reflect sa chart
             ['Appointment no show',   3],
             ['Surgical Procedure',   2]
             ]);
@@ -204,9 +195,6 @@
             chart1.draw(data1)
             updateChartData(data1)
         }
-        
-
-
 
         function updateChartData(dataTable){
             for (var i=0; i<dataTable.getNumberOfRows(); i++){
@@ -221,7 +209,6 @@
             }
             }
         }
-        
     </script>
 </body>
 </html>
