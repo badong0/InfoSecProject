@@ -1,0 +1,188 @@
+
+<!--ADMIN APPOINTMENT CALENDARVIEW-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointments</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <!-- Main Wrapper -->
+    <div id="wrapper">
+
+        <!-- Left Panel -->
+        <div id="left_panel">
+            <img id="logo" src="icons/patient/logo.png" alt="Logo">
+            <div>
+                <label id="label_home"><img src="icons/patient/home_icon.png" alt="Home Icon">Homepage</label>
+                <label id="label_notification"><img src="icons/patient/notification_icon.png" alt="Notification Icon">Notifications</label>
+                <label id="label_medical"><img src="icons/patient/medical_record_icon.png" alt="Medical Record Icon">Medical Records</label>
+                <label id="label_calendar"><img src="icons/patient/calendar_icon.png" alt="Calendar Icon">Appointments</label>
+                <label id="label_chat"><img src="icons/patient/message_icon.png" alt="Message Icon">Messages</label>
+                <label><img src="icons/patient/signout_icon.png" alt="Logout Icon">Sign Out</label>
+            </div>
+        </div>
+
+
+        
+        <!-- Right Panel -->
+        <div id="right_panel">
+
+
+            <!-- Header -->
+            <div id="header">
+                <div id="info">
+                    <p id="fullname">Carlos Sainz</p>
+                    <p id="status">Patient</p>
+                </div>
+                <img id="profile_icon" src="img/CarlosID.png" alt="Profile Icon">
+            </div>
+
+            <!--menu selection-->
+            <div class="menu">
+                <div class="menu-item">Request</div>
+                <div class="menu-item">List View</div>
+                <div class="menu-item">Calendar View</div>
+            </div>
+        
+        <!-- Main Content Panel -->
+        <div class="search-bar">
+            <header>
+                <h1>Appointment Requests</h1>
+                <div>
+                    <input type="text" placeholder="Search Appointment">
+                    <button>SEARCH</button>
+                    <button>FILTER</button>    
+                </div>
+            </header>
+        </div>
+
+        <div class="appointment-content">
+            <table class="appointment-table-calendar">
+                <thead>
+                    <tr>
+                        <th>MONDAY</th>
+                        <th>TUESDAY</th>
+                        <th>WEDNESDAY</th>
+                        <th>THURSDAY</th>
+                        <th>FRIDAY</th>
+                        <th>SATURDAY</th>
+                        <th>SUNDAY</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <td> </td>
+                    <td>1</td>
+                    <td>2
+                        <div class="schedule">
+                            <span>09:00 AM - 10:00 AM</span>
+                        </div>
+                    </td>
+                    <td>3
+                        <div class="schedule">
+                            <span>09:00 AM - 10:00 AM</span>
+                        </div>
+                        <div class="schedule">
+                            <span>11:00 AM - 12:00 PM</span>
+                        </div>
+                    </td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                </tbody>
+                <tbody>
+                    <td>7</td>
+                    <td>8
+                        <div class="schedule">
+                            <span>3:00 PM - 5:00 PM</span>
+                        </div>
+                    </td>
+                    <td>9</td>
+                    <td>10</td>
+                    <td>11
+                        <div class="schedule">
+                            <span>9:00 AM - 10:00 AM</span>
+                        </div>
+                        <div class="schedule">
+                            <span>3:00 PM - 5:00 PM</span>
+                        </div>
+                    </td>
+                    <td>12
+                        <div class="schedule">
+                            <span>2:00 PM - 3:00 PM</span>
+                        </div>
+                    </td>
+                    <td>13</td>
+                </tbody>
+                <tbody>
+                    <td>14</td>
+                    <td>15
+                        <div class="schedule">
+                            <span>9:00 AM - 10:00 AM</span>
+                        </div>
+                        <div class="schedule">
+                            <span>11:00 AM - 12:00 PM</span>
+                        </div>
+                    </td>
+                    <td>16</td>
+                    <td>17
+                        <div class="schedule">
+                            <span>9:00 AM - 10:00 AM</span>
+                        </div>
+                    </td>
+                    <td>18</td>
+                    <td>19</td>
+                    <td>20</td>
+                </tbody>
+                <tbody>
+                    <td>21</td>
+                    <td>22</td>
+                    <td>23
+                        <div class="schedule">
+                            <span>9:00 AM - 10:00 AM</span>
+                        </div>
+                    </td>
+                    <td>24</td>
+                    <td>25
+                        <div class="schedule">
+                            <span>9:00 AM - 10:00 AM</span>
+                        </div>
+                    </td>
+                    <td>26</td>
+                    <td>27</td>
+                </tbody>
+                <tbody>
+                    <td>28
+                        <div class="schedule">
+                            <span>1:00 PM - 2:00 PM</span>
+                        </div>
+                    </td>
+                    <td>29
+                        <div class="schedule">
+                            <span>10:00 AM - 11:00 AM</span>
+                        </div>
+                    </td>
+                    <td>30
+                        <div class="schedule">
+                            <span>9:00 AM - 10:00 AM</span>
+                        </div>
+                        <div class="schedule">
+                            <span>11:00 AM - 12:00 PM</span>
+                        </div>
+                    </td>
+                    <td>31</td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                </tbody>
+
+
+            </table>
+        </div>
+    </div>
+</body>
+</html>
