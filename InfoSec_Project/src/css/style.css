@@ -316,17 +316,6 @@
 
 
     .appointment-table-calendar{ /* css for the calendar content */
-        /*
-                max-width: fit-content;
-    
-        margin: 0 auto;
-        border-collapse: collapse;
-        table-layout: fixed;
-        background-color: #fefefe;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        border-radius: 8px;
-        overflow: hidden;
-         */
          padding: 5px 5px;
          border-collapse: collapse;
          width:fit-content;
@@ -387,6 +376,7 @@
 
     }
 
+    
     /*ito yung sa overview*/
     .appointment-right-panel-calendar-overview{
         box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -424,7 +414,7 @@
         color: #335271;
     }
 
-
+    /*end of calendarview2.html */
 
 
 
