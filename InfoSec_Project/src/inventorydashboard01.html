@@ -1,0 +1,223 @@
+
+<!--ADMIN APPOINTMENT CALENDARVIEW-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointments</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--js script for the line-->
+    
+</head>
+<body>
+    <!-- Main Wrapper -->
+    <div id="wrapper">
+
+        <!-- Left Panel -->
+        <div id="left_panel">
+            <img id="logo" src="icons/patient/logo.png" alt="Logo">
+            <div>
+                <label id="label_home"><img src="icons/patient/home_icon.png" alt="Home Icon">Homepage</label>
+                <label id="label_notification"><img src="icons/patient/notification_icon.png" alt="Notification Icon">Notifications</label>
+                <label id="label_medical"><img src="icons/patient/medical_record_icon.png" alt="Medical Record Icon">Medical Records</label>
+                <label id="label_calendar"><img src="icons/patient/calendar_icon.png" alt="Calendar Icon">Appointments</label>
+                <label id="label_chat"><img src="icons/patient/message_icon.png" alt="Message Icon">Messages</label>
+                <label><img src="icons/patient/signout_icon.png" alt="Logout Icon">Sign Out</label>
+            </div>
+        </div>
+
+
+        
+        <!-- Right Panel -->
+        <div id="right_panel">
+
+
+            <!-- Header -->
+            <div id="header">
+
+                <!--menu selection-->
+                <div class="menu-selection">
+                    <div class="menu-item"><a href="request">Request</a></div>
+                    <div class="menu-item"><a href="listview">List View</a></div>
+                    <div class="menu-item"><a href="calendarview">Calendar View</a></div>
+                </div>
+
+
+                <div id="info">
+                    <p id="fullname">Carlos Sainz</p>
+                    <p id="status">Patient</p>
+                </div>
+                <img id="profile_icon" src="img/CarlosID.png" alt="Profile Icon">
+            </div>
+
+
+        
+
+        <!-- Main Content Panel -->
+        <div class="inventory-dashboard-header">
+            <header>
+                <h1>Inventory Dashboard</h1>
+            </header>
+        </div>
+
+        <!--ito yung nasa baba-->
+        <div class="inventory-main-content">
+
+            <!--ito yung nasa top part-->
+            <div class="inventory-dashboard-section">
+                <div class="inventory-dashboard-section-top-part">
+                    <strong>P 1,120,000.00</strong>
+                    <h2>Total Inventory Value</h>
+                </div>
+                <div class="inventory-dashboard-section-top-part">
+                    <strong>5</strong>
+                    <h2>Items Low on Stock</h>
+                </div>
+                <div class="inventory-dashboard-section-top-part">
+                    <strong>7</strong>
+                    <h2>Approved Appointments Today</h>
+                </div>
+                <div class="inventory-dashboard-section-top-part">
+                    <strong>92%</strong>
+                    <h2>On-Time Supplier Rate</h>
+                </div>
+            </div>
+
+            <!--ito yung monthly inventory usage yung graph-->
+            <div class="inventory-dashboard-section">
+                <div class="inventory-dashboard-section-line-graph">
+                    <h2>Inventory Dashboard</h2>
+                    <canvas id="inventory-dashboard-line-chart"></canvas>
+                </div>
+            </div>
+
+            <div class="inventory-dashboard-section">
+
+                <div class="inventory-dashboard-lower">
+
+                    <div class="inventory-dashboard-pie">
+                        <!--ito yung kaliwa yung data-->
+                        <div class="inventory-dashboard-pie">
+                            <h2>Inventory Cost Insights</h2>
+                            <p>Total Monthly Spend:<strong>P85,000.00</strong></p>
+
+                            <h3>Spending by Category</h3>
+                            <ul>
+                                <li>Consumables<strong>P45,000.00</strong></li>
+                                <li>Equipment<strong>P30,000.00</strong></li>
+                                <li>Apparatus<strong>P10,000.00</strong></li>
+                            </ul>
+
+                        </div>
+                        <!--ito yung kanan yung pie chart-->
+                        <div class="inventory-dashboard-pie">
+                            <div class="piechart" id="piechart1"></div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="inventory-dashboard-pie">
+                        <!--ito yung kaliwa yung data-->
+                        <div class="inventory-dashboard-pie">
+                            <h2>Inventory Cost Insights</h2>
+                            <p>Total Monthly Spend:<strong>P85,000.00</strong></p>
+
+                            <h3>Spending by Category</h3>
+                            <ul>
+                                <li>Consumables<strong>P45,000.00</strong></li>
+                                <li>Equipment<strong>P30,000.00</strong></li>
+                                <li>Apparatus<strong>P10,000.00</strong></li>
+                            </ul>
+
+                        </div>
+                        <!--ito yung kanan yung pie chart-->
+                        <div class="inventory-dashboard-pie">
+                            <div class="piechart" id="piechart2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="inventory-dashboard-section">
+                
+            </div>
+        </div>
+</body>
+<script>
+    
+    const ctx = document.getElementById('inventory-dashboard-line-chart').getContext('2d');
+    const myChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11'],
+            datasets: [{
+                label: 'Consumables',
+                data: [800, 100, 900, 400, 500, 100, 400, 500, 800, 400, 900, 500],
+                borderColor: 'rgb(75, 192, 192)',
+                fill: false
+            }, {
+                label: 'Equipment',
+                data: [300, 0, 1000, 150, 300, 100, 400, 500, 700, 300, 600, 400],
+                borderColor: 'rgb(255, 99, 132)',
+                fill: false
+            }, {
+                label: 'Apparatus',
+                data: [500, 0, 700, 200, 100, 800, 600, 300, 500, 900, 800, 300],
+                borderColor: 'rgb(255, 159, 64)',
+                fill: false
+            }]
+        },
+        options: {
+        legend: {display: false}
+      }
+    });
+  </script>
+
+
+
+  <!--script for piechart 1-->
+  <script>
+    google.charts.load('current', {'packages':['corechart']});
+    google.charts.setOnLoadCallback(drawCharts);
+
+
+    function drawCharts(){
+        var data1 = google.visualization.arrayToDataTable([
+        ['Category', 'Spending'],
+        ['Consumables',     45000],
+        ['Equipment',      30000],
+        ['Apparatus',    10000]
+        ]);
+
+        var data2 = google.visualization.arrayToDataTable([
+        ['Category', 'Spending'],
+        ['Consumables',     45000],
+        ['Equipment',      30000],
+        ['Apparatus',    10000]
+        ]);
+
+        const chart1 = new google.visualization.PieChart(document.getElementById('piechart1'))
+        chart1.draw(data1)
+
+        const chart2 = new google.visualization.PieChart(document.getElementById('piechart2'))
+        chart2.draw(data2)  
+    }
+    
+
+    
+
+    var options = {
+        tooltip: {
+            trigger: 'focus'
+        }
+    };
+  </script>
+</html>
