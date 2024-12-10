@@ -1,0 +1,100 @@
+<!--ADMIN APPOINTMENT CALENDARVIEW-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--js script for the line-->
+    
+</head>
+<body>
+    <!-- Main Wrapper -->
+    <div id="wrapper">
+
+        <!-- Left Panel -->
+        <div id="left_panel">
+            <img id="logo" src="icons/patient/logo.png" alt="Logo">
+            <div>
+                <label id="label_home"><img src="icons/patient/home_icon.png" alt="Home Icon">Homepage</label>
+                <label id="label_notification"><img src="icons/patient/notification_icon.png" alt="Notification Icon">Notifications</label>
+                <label id="label_medical"><img src="icons/patient/medical_record_icon.png" alt="Medical Record Icon">Medical Records</label>
+                <label id="label_calendar"><img src="icons/patient/calendar_icon.png" alt="Calendar Icon">Appointments</label>
+                <label id="label_chat"><img src="icons/patient/message_icon.png" alt="Message Icon">Messages</label>
+                <label><img src="icons/patient/signout_icon.png" alt="Logout Icon">Sign Out</label>
+            </div>
+        </div>
+
+
+        
+        <!-- Right Panel -->
+        <div id="right_panel">
+
+
+            <!-- Header -->
+            <div id="header">
+
+             <div id="info">
+                    <p id="fullname">Carlos Sainz</p>
+                    <p id="status">Patient</p>
+                </div>
+                <img id="profile_icon" src="img/CarlosID.png" alt="Profile Icon">
+            </div>
+
+
+            <div class="menu">
+                <div class="menu-item">Inventory Dashboard</div>
+                <div class="menu-item">Item List</div>
+                <div class="menu-item">Monitor and Track Usage</div>
+                <div class="menu-item">Suppliers</div>
+            </div>
+
+        <!-- Main Content Panel -->
+        <div class="monitor-track-usage-header">
+            <header>
+                <h1>Monitor and Track Usage</h1>
+            </header>
+        </div>
+
+        <div class="patient-procedure-panel">
+
+                <h2>Patient and Procedure Details</h2>
+                <div class="procedure-details">
+                    <div class="procedure-input-group">
+                        <label for="patient-name">Patient:</label>
+                        <input type="text" id="patient-name" placeholder="Type patient name">
+                    </div>
+                    <div class="procedure-input-group">
+                        <label for="procedure-name">Procedure:</label>
+                        <input type="text" id="procedure-name" placeholder="Select procedure">
+                    </div>
+                    <div class="procedure-input-group">
+                        <label for="procedure-date">Date of Procedure:</label>
+                        <input type="date" id="procedure-date" >
+                    </div>
+                </div>
+
+                <h2>Item Usage Details</h2>
+                <div class="item-usage-details">
+                    <div class="z">
+                        <label for="item-name">Item 1:</label>
+                        <select id="item-name">
+                            <option value="">Select item</option>
+                        </select>
+                        <input type="number" placeholder="quantity">
+                        <input type="text" placeholder="Unit">
+                    </div>
+                    <button class="add-item-btn">Add Item</button>
+                </div>
+            <button class="save-btn">Save</button>
+        </div>  
+        </div>
+    </div>
+</body>
+</html>
